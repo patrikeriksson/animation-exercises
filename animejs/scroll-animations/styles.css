@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background-color: #0a192f;
+  height: 200vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek-anim-demo {
+  margin-top: 600px;
+  display: flex;
+}
+
+.el {
+  width: 25px;
+  height: 25px;
+  margin: 0 3px;
+  background-color: aqua;
+}

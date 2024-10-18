@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.square {
+  height: 500px;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 24px;
+}
+
+.cube {
+  height: 50px;
+  width: 50px;
+  animation: moveAround 5s ease-in-out infinite;
+}
+
+@keyframes moveAround {
+  0% {
+    transform: translate(0px, 0px);
+    background-color: yellow;
+  }
+  25% {
+    transform: translate(450px, 0px);
+    background-color: red;
+  }
+  50% {
+    transform: translate(450px, 450px);
+    background-color: blue;
+  }
+  75% {
+    transform: translate(0, 450px);
+    background-color: green;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    background-color: yellow;
+  }
+}

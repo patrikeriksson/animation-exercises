@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  transform-origin: center 150%;
+
+  &:nth-child(1) {
+    background-color: red;
+  }
+  &:nth-child(2) {
+    background-color: orange;
+  }
+  &:nth-child(3) {
+    background-color: yellow;
+  }
+  &:nth-child(4) {
+    background-color: green;
+  }
+  &:nth-child(5) {
+    background-color: rgb(138, 255, 138);
+  }
+  &:nth-child(6) {
+    background-color: rgb(98, 195, 255);
+  }
+  &:nth-child(7) {
+    background-color: blue;
+  }
+  &:nth-child(8) {
+    background-color: violet;
+  }
+  &:nth-child(9) {
+    background-color: pink;
+  }
+}
+
+.deck:hover .card:nth-child(1) {
+  transform: rotate(-40deg);
+}
+.deck:hover .card:nth-child(2) {
+  transform: rotate(-30deg);
+}
+.deck:hover .card:nth-child(3) {
+  transform: rotate(-20deg);
+}
+.deck:hover .card:nth-child(4) {
+  transform: rotate(-10deg);
+}
+.deck:hover .card:nth-child(5) {
+  transform: rotate(0deg);
+}
+.deck:hover .card:nth-child(6) {
+  transform: rotate(10deg);
+}
+.deck:hover .card:nth-child(7) {
+  transform: rotate(20deg);
+}
+.deck:hover .card:nth-child(8) {
+  transform: rotate(30deg);
+}
+.deck:hover .card:nth-child(9) {
+  transform: rotate(40deg);
+}
